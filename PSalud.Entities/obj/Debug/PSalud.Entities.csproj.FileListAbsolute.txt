@@ -1,0 +1,9 @@
+C:\Users\Edwin\Documents\Visual Studio 2012\Projects\PSalud\PSalud\PSalud.Entities\bin\Debug\PSalud.Entities.dll
+C:\Users\Edwin\Documents\Visual Studio 2012\Projects\PSalud\PSalud\PSalud.Entities\bin\Debug\PSalud.Entities.pdb
+C:\Users\Edwin\Documents\Visual Studio 2012\Projects\PSalud\PSalud\PSalud.Entities\obj\Debug\PSalud.Entities.dll
+C:\Users\Edwin\Documents\Visual Studio 2012\Projects\PSalud\PSalud\PSalud.Entities\obj\Debug\PSalud.Entities.pdb
+C:\Users\DavidAlexis\Documents\Visual Studio 2012\Projects\PS-master\PS-master\PSalud.Entities\bin\Debug\PSalud.Entities.dll
+C:\Users\DavidAlexis\Documents\Visual Studio 2012\Projects\PS-master\PS-master\PSalud.Entities\bin\Debug\PSalud.Entities.pdb
+C:\Users\DavidAlexis\Documents\Visual Studio 2012\Projects\PS-master\PS-master\PSalud.Entities\obj\Debug\PSalud.Entities.csprojResolveAssemblyReference.cache
+C:\Users\DavidAlexis\Documents\Visual Studio 2012\Projects\PS-master\PS-master\PSalud.Entities\obj\Debug\PSalud.Entities.dll
+C:\Users\DavidAlexis\Documents\Visual Studio 2012\Projects\PS-master\PS-master\PSalud.Entities\obj\Debug\PSalud.Entities.pdb

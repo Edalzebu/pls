@@ -1,0 +1,25 @@
+﻿@using BootstrapSupport
+@model PSalud.Models.Affiliates.AffiliatesModel
+
+@using (@Html.BeginForm("NewAffiliate", "Affiliates", FormMethod.Post, new {@class = "form-horizontal"}))
+{
+    <h4>Agregar Afiliado</h4>
+    <br/>
+        @Html.ValidationSummary(true)
+    
+        foreach (var property in Model.VisibleProperties())
+        {
+            using(Html.ControlGroupFor(property.Name, new {@class = "form-group"})){
+                @Html.Label(property.Name.ToSeparatedWords(), new { @class = "col-sm-4 control-label" })
+                <div class="col-sm-2">
+                    @Html.Editor(property.Name, new { @class = "form-control" })
+                    @Html.ValidationMessage(property.Name, null, new { @class = "help-inline" })
+                </div>
+            }
+        }
+   
+		<div class="form-actions">
+            <button type="submit" class="btn btn-primary">Crear</button>
+         </div>
+    
+}

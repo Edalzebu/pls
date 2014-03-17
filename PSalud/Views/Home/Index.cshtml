@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home";
+    
+}
+
+<div class="row">
+
+   
+    <div style="margin-bottom: 2%;">
+        <ul class="nav nav-tabs affix" data-spy="affix" data-offset-top="190">
+            <li class="active" id="li-afiliados"><a>Afiliados</a></li>
+            <li id="li-medicos"><a>Medicos</a></li>
+            <li id="li-citas"><a>Citas</a></li>
+        </ul>
+ </div>  
+    <div id="tab-afiliados" class="row">
+        <div class="col-md-6">
+            @{
+                Html.RenderAction("NewAffiliate", "Affiliates");
+            } 
+             
+        </div>
+        <div class="col-md-6"> 
+            <div class="span6" style="">
+                @{
+                    Html.RenderAction("ListAffiliates", "Affiliates");
+                }
+                
+            </div>
+            
+        </div>
+        
+
+        
+    </div>
+    <div id="tab-medicos" hidden>
+        @{
+            Html.RenderAction("NewMedic","Medics");
+        }  
+        
+    </div>
+    <div id="tab-citas" hidden>
+        @{
+            //Html.RenderAction("Randomizer", "Administrator");
+        }  
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"> </script>
+<script type="text/javascript">
+
+   
+   
+    $("li").click(function () {
+        $("li").removeClass("active");
+        this.className = "active";
+    });
+    $("#li-afiliados").click(function () {
+        $("div[id^= 'tab'").hide();
+        $("#tab-afiliados").fadeIn();
+    });
+    $("#li-medicos").click(function () {
+        $("div[id^= 'tab'").hide();
+        $("#tab-medicos").fadeIn();
+    });
+    $("#li-citas").click(function () {
+        $("div[id^= 'tab'").hide();
+        $("#tab-citas").fadeIn();
+    });
+   
+</script>

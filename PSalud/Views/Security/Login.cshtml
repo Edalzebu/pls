@@ -1,0 +1,35 @@
+﻿@model PSalud.Models.Security.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Login - PSalud</title>
+    </head>
+
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>User</legend>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                <br />
+                @Html.LabelFor(m => m.Password)
+                @Html.EditorFor(m => m.Password)
+                <br />
+                <select>
+                    <option>San Pedro Sula</option>
+                    <option>Tegucigalpa</option>
+                    <option>La Ceiba</option>
+                </select>
+                <br />
+                <button>Login</button>
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
